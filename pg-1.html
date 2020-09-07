@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Bootstrap core CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <style>
+        @font-face {
+            src: url('fonts/HelveticaNeueLTStd ThCn.otf');
+            font-family: "HelveticaNeueLTStd ThCn";
+        }
+        
+        @font-face {
+            src: url('fonts/HelveticaNeueLTStd LtCn.otf');
+            font-family: "HelveticaNeueLTStd LtCn";
+        }
+        
+        body {
+            background-color: #f8f2e9;
+        }
+        
+        center {
+            height: 100vh;
+        }
+        
+        h1 {
+            font-family: HelveticaNeueLTStd ThCn;
+            color: rgb(142, 105, 73);
+            max-width: 283px;
+            margin: 0;
+            letter-spacing: 2px;
+            margin-top: 52px;
+            font-weight: 600;
+        }
+        
+        h2 {
+            font-family: HelveticaNeueLTStd ThCn;
+            color: rgb(142, 105, 73);
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        
+        .content {
+            border-radius: 3px;
+            margin-top: 42px;
+            max-width: 695px;
+            height: 695px;
+            min-height: auto;
+            background: center center / contain no-repeat url(photos/section-background-1.jpg);
+            box-shadow: 0px 0px 15px 1.3px rgba(151, 121, 94, 0.75);
+            padding: 5px;
+        }
+        
+        .content .text {
+            float: left;
+            margin-top: 45%;
+            text-align: left;
+            max-width: 300px;
+        }
+        
+        .content .text p {
+            color: #7e7e7e;
+            font-family: HelveticaNeueLTStd ThCn;
+            font-size: 28px;
+            font-weight: 550;
+        }
+        
+        .content .text small {
+            font-family: HelveticaNeueLTStd ThCn;
+            font-size: 14px;
+            color: #7e7e7e;
+            font-weight: 700;
+        }
+        
+        .content .text p {
+            font-family: HelveticaNeueLTStd ThCn;
+            font-size: 20px;
+            color: #69696B;
+            font-weight: 500;
+        }
+        
+        .content .web {
+            margin-top: 15%;
+            float: left;
+            text-align: left;
+            width: 685px;
+        }
+        
+        .content .web p {
+            font-family: HelveticaNeueLTStd ThCn;
+            font-size: 20px;
+            color: #69696B;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+        
+        #moded-text {
+            color: #494949;
+            font-family: HelveticaNeueLTStd ThCn;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        
+        .content .web ul {
+            text-align: left;
+            padding: 0%;
+        }
+        
+        a {
+            color: #69696B;
+            cursor: pointer;
+        }
+        
+        .content .colors {
+            letter-spacing: 4px !important;
+            font-family: HelveticaNeueLTStd LtCn;
+            margin-top: 68px;
+            text-align: left;
+            width: 300px;
+            padding: 0%;
+            margin-left: 340px;
+        }
+        
+        .content .colors .color-circles {
+            padding: 0%;
+        }
+        
+        #circle-1 {
+            margin-left: 0%;
+        }
+        
+        .content .colors .color-circles input {
+            cursor: pointer;
+            height: 39px;
+            width: 39px;
+            margin-left: 5px;
+            border: none;
+            padding: 0%;
+            border-radius: 100%;
+        }
+        
+        .content .colors .color-circles input::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+        
+        .content .colors .color-circles input::-webkit-color-swatch {
+            border: none;
+            border-radius: 100%;
+        }
+        
+        .content .colors .color-circles input::-moz-color-swatch {
+            border: none;
+            border-radius: 100%;
+        }
+        
+        @media (min-width: 330px) and (max-width: 430px) {
+            * {
+                font-weight: bolder !important;
+            }
+            .content {
+                height: 50%;
+                background-size: cover;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 0.1px;
+                overflow: auto;
+                padding: 10px;
+            }
+            .content .text {
+                padding: 0;
+                width: 150px;
+                margin-top: 50%;
+                height: 100px;
+            }
+            .content .text p {
+                margin-top: 50px !important;
+            }
+            .content .web {
+                margin-top: 60px;
+                width: 300px;
+            }
+            .content .web p {
+                font-size: 10px;
+                color: rgb(142, 105, 73);
+            }
+            .content .colors {
+                width: 250px;
+                margin-left: 60px;
+                margin-right: 0;
+                margin-bottom: 0;
+                margin-top: 30px;
+            }
+            #moded-text {
+                font-size: 20px;
+                color: rgb(142, 105, 73);
+                margin: 0;
+                display: block;
+            }
+            .content .text small {
+                margin-top: 60px;
+                font-size: 11px;
+                width: 140px;
+                font-weight: 700;
+            }
+            .content .colors .color-circles {
+                width: 240px;
+                padding: 0;
+            }
+            .content .colors .color-circles input {
+                height: 15px;
+                width: 15px;
+            }
+            .content .colors .color-circles input:hover {
+                height: 30px;
+                width: 30px;
+                position: relative;
+            }
+        }
+        
+        @media (min-width: 430px) and (max-width: 700px) {
+            .content {
+                background-color: white;
+                height: 55%;
+                background-size: contain no-repeat;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 0.1px;
+                overflow: auto;
+                padding: 10px;
+            }
+            .content .colors {
+                width: 200px;
+                margin-left: 190px !important;
+                margin-right: 0;
+                margin-bottom: 0;
+                margin-top: 30px;
+            }
+            #moded-text {
+                font-size: 20px;
+                color: rgb(142, 105, 73);
+                margin: 0;
+            }
+            .content .text small {
+                margin-top: 60px;
+                font-size: 11px;
+                width: 140px;
+                font-weight: 700;
+            }
+            .content .colors .color-circles {
+                padding: 0;
+            }
+            .content .colors .color-circles input {
+                height: 15px;
+                width: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>SQUARE FLYER</h1>
+        <h2>DECO HOME</h2>
+        <div class="content">
+            <ul class="text">
+                <p id="moded-text">
+                    Bedroom
+                </p>
+                <small>
+                Lorem ipsum dolor sit amet, consectetur <br>
+                adipiscing elit, sed do eiusmod tempor
+            </small>
+            </ul>
+            <ul class="web">
+                <ul>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-tumblr"></a>
+                </ul>
+                <p>
+                    www.yourweb.com
+                </p>
+            </ul>
+            <ul class="colors">
+                <ul class="color-circles">
+                    <input id="circle-1" type="color" id="favcolor" name="favcolor" value="#EDEBEC">
+                    <input type="color" id="favcolor" name="favcolor" value="#D7D6DB">
+                    <input type="color" id="favcolor" name="favcolor" value="#787F66">
+                </ul>
+                <p id="moded-text">
+                    Color Palette
+                </p>
+            </ul>
+        </div>
+    </center>
+</body>
+
+</html>
