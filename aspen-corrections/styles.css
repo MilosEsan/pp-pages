@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+}
+
+header {
+    background-color: #222222;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.logo {
+    background-color: #000000;
+    height: 100px;
+    width: 350px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 56px;
+    width: 180px;
+}
+
+.menu {
+    width: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.profile-name {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.profile-picture img {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+}
+
+.notification {
+    height: 30px;
+    width: 30px;
+    margin-left: 60px;
+}
+
+main {
+    display: flex;
+    justify-content: start;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 0px 30px 0px;
+    margin-right: 0 !important;
+    height: 100vh;
+    width: 350px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 25px #00000080;
+}
+
+aside .list li {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+aside .list a {
+    color: #222222;
+}
+
+aside .list i {
+    margin-right: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+aside .list-1 small {
+    color: #b07e09;
+}
+
+.content {
+    margin: 60px;
+    width: 75%;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 26px;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.top {
+    flex: 1 1 auto;
+    height: 438px;
+    margin-bottom: 60px;
+}
+
+.top1 {
+    margin-right: 30px;
+}
+
+.top2 {
+    margin-left: 30px;
+}
+
+.bottom {
+    height: 256px;
+}
+
+.top,
+.bottom {
+    box-shadow: 0px 2px 10px #00000080;
+    background-color: #ffffff;
+}
+
+@media (min-width: 340px) and (max-width: 900px) {
+    .logo {
+        width: 250px;
+        padding: 20px;
+    }
+    .logo img {
+        height: 56px;
+        width: 130px;
+    }
+    .profile-picture img {
+        height: 45px;
+        width: 45px;
+    }
+    .profile-name {
+        font-size: 15px;
+    }
+    .menu {
+        margin-left: 20px;
+    }
+    .notification {
+        height: 15px;
+        width: 15px;
+        margin-left: 20px;
+    }
+    .title {
+        margin-top: 30px;
+    }
+    aside {
+        overflow-y: auto;
+        padding: 20px 5px 20px 20px !important;
+        position: absolute;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 60px 0px 30px 0px;
+        height: 100px;
+        width: 100%;
+    }
+    aside.list {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        flex-basis: 300px;
+    }
+    aside .list li,
+    .list-1 li {
+        margin-bottom: 3px;
+        margin-right: 20px;
+        padding: 0;
+        float: left;
+        font-size: 13px;
+    }
+    aside .list i {
+        vertical-align: auto;
+        margin-right: 10px;
+    }
+    .content {
+        margin: 100px 30px 30px 30px;
+        height: 800px;
+        width: 100%;
+    }
+    .flex-wrapper {
+        flex-direction: column;
+    }
+    .top1,
+    .top2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .bottom {
+        margin-bottom: 20px;
+    }
+}
