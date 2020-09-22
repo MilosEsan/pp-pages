@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Bootstrap core CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <a class="logo"><img src="pics/logo.svg"></a>
+        <div class="menu">
+            <a class="profile-name" href="/profile">John Doe</a>
+            <a class="profile-picture" href="#"><img src="pics/profile_pic.svg"></a>
+            <a class="notification" href="#"><img src="pics/notification.svg"></a>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul class="list">
+                <li><a><i class="fa fa-cog"></i>Dashboard</a></li>
+                <li><a><i class="fas fa-tools"></i>Service requests</a></li>
+                <li><a><i class="fas fa-archive"></i>Bookings</a></li>
+                <li><a><i class="fas fa-cube"></i>Amenities</a></li>
+                <li><a><i class="fa fa-users"></i>Users</a></li>
+                <li><a><i class="fa fa-building"></i>Properties</a></li>
+                <li><a><i class="fas fa-circle"></i>Companies</a></li>
+                <li><a><i class="fas fa-bell"></i>Notification</a></li>
+                <li><a><i class="fas fa-folder"></i>Data Lists</a></li>
+            </ul>
+            <ul class="list-1">
+                <li>Aspen Properties</li>
+                <li><small>Version 2.4.5</small></li>
+            </ul>
+        </aside>
+        <section class="container content">
+
+            <div class="row">
+                <h1 class="col-md-12 title">Profile</h1>
+            </div>
+            <div class="row profile-content">
+                <section class="row row-0">
+                    <a class="col-md-2 profile-picture-1" href="#"><img src="pics/profile_pic.svg">
+                        <i class="fas fa-pencil-alt"></i></a>
+                    <span class="col-md-2 profile-info"><h1 class="title">John Doe</h1>
+                <p>johndoe@example.com</p></span>
+                    <a class="col-md-2 col-md-offset-6 change-password">Change password</a>
+                </section>
+                <section class="row" id="info-title">
+                    <p>BASIC INFORMATION</p>
+                </section>
+                <section class="row row-1">
+                    <span class="col-md-5">
+                        <small>First Name</small>
+                        <input value="John"/>
+                    </span>
+                    <span class="col-md-5 col-md-offset-2">
+                        <small>Last name</small>
+                        <input value="Doe"/>
+                    </span>
+                </section>
+                <section class="row row-2">
+                    <span class="col-md-5">
+                        <small>E-mail</small>
+                        <input value="johndoe@example.com"/>
+                    </span>
+                    <span class="col-md-5 col-md-offset-2">
+                        <small>Contact number</small>
+                        <small>+1</small><input value="123 4567 890"/>
+                    </span>
+                </section>
+                <section class="row row-3">
+                    <span class="col-md-5">
+                        <small>Gender</small>
+                        <input value="Male"/>
+                    </span>
+                    <span class="col-md-5 col-md-offset-2">
+                        <small>Age group</small>
+                        <input value="25-34"/>
+                    </span>
+                </section>
+                <section class="row row-4">
+                    <span class="col-md-5">
+                        <small>Bio</small>
+                        <textarea name="bio" id="bio-text" cols="30" rows="3">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since...
+                        </textarea>
+                        <small id="length">180/500</small>
+                    </span>
+                    <span class="col-md-5 col-md-offset-2">
+                        <small>Linkedin URL</small>
+                        <input value="linkedin.com/JohnDoe"/>
+                    </span>
+                </section>
+                <section class="row row-5 d-flex align-items-flex-end">
+                    <input class="col-md-1" type="checkbox">
+                    <p class="col-md-6">Hide your public contact info (email and number) from other tenants.</p>
+                    <a class="fas fa-info-circle col-md-1"></a>
+                    </span>
+                </section>
+            </div>
+
+    </main>
+</body>
+
+</html>

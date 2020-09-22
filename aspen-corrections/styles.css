@@ -70,7 +70,7 @@ aside {
     justify-content: space-between;
     padding: 60px 0px 30px 0px;
     margin-right: 0 !important;
-    height: 100vh;
+    height: auto;
     width: 350px;
     background-color: #ffffff;
     box-shadow: 0px 4px 25px #00000080;
@@ -138,9 +138,90 @@ aside .list-1 small {
 }
 
 .top,
-.bottom {
+.bottom,
+.profile-content {
     box-shadow: 0px 2px 10px #00000080;
     background-color: #ffffff;
+    padding: 60px;
+}
+
+
+/*PROFILE-PAGE CODE IS BELOW*/
+
+.profile-picture-1 img {
+    border-radius: 50%;
+    height: 131px;
+    width: 131px;
+}
+
+.change-password {
+    color: #b07e09;
+    cursor: pointer;
+}
+
+.profile-picture-1 i {
+    position: absolute;
+    color: #ffffff;
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    padding: 13px;
+    font-size: 17px;
+    background-color: #b07e09;
+}
+
+.profile-content .row {
+    margin-bottom: 30px;
+}
+
+#info-title {
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.row-1 span,
+.row-2 span,
+.row-3 span,
+.row-4 span {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+    border: 1px solid #C5C5C5;
+    margin-bottom: 30px;
+}
+
+.row-5 {
+    padding-left: 0;
+    width: 100%;
+}
+
+.row-5 span {
+    border-width: 0;
+}
+
+span small {
+    color: #C5C5C5;
+}
+
+#length {
+    align-self: flex-end;
+}
+
+#bio-text {
+    border-width: 0;
+    overflow: hidden;
+}
+
+span input {
+    border-width: 0;
+    margin-bottom: 10px;
+}
+
+.row-5 input {
+    margin-left: 0;
+    border-radius: 0;
+    border-color: #C5C5C5;
 }
 
 @media (min-width: 340px) and (max-width: 900px) {
