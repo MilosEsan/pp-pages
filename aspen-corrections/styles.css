@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #f3f3f3;
+    background: #E5E5E5;
 }
 
 header {
@@ -209,8 +209,10 @@ span small {
 }
 
 #bio-text {
-    border-width: 0;
     overflow: hidden;
+    border-width: 0;
+    font-size: 13px;
+    padding: 2px;
 }
 
 span input {
@@ -222,6 +224,76 @@ span input {
     margin-left: 0;
     border-radius: 0;
     border-color: #C5C5C5;
+}
+
+
+/* login */
+
+.login-body {
+    display: flex;
+    justify-content: flex-end;
+    padding: 80px;
+    background-image: url(pics/background.png);
+    background-size: 75% 100%;
+    background-repeat: no-repeat;
+}
+
+.login-box {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 100px 60px 100px;
+    width: fit-content;
+    align-self: flex-end;
+    box-shadow: 0px 4px 25px #0000000d;
+}
+
+.login-box img {
+    height: 145px;
+    width: 175px;
+    margin-bottom: 66px;
+}
+
+.login-box h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 74px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper input {
+    color: #C5C5C5;
+    padding-left: 25px;
+    width: 640px;
+    height: 102px;
+    margin-bottom: 20px;
+    border: 1px solid #C5C5C5;
+}
+
+.form-wrapper a {
+    align-self: flex-end;
+    margin-bottom: 99px;
+    color: #b07e09;
+}
+
+.login-box button {
+    color: #ffffff;
+    width: 200px;
+    height: 60px;
+    background: #B07E09;
+    border-width: 0;
+    margin-bottom: 228px;
+}
+
+.login-box .privacy {
+    color: #b07e09;
+    text-decoration: underline;
 }
 
 @media (min-width: 340px) and (max-width: 900px) {
@@ -297,5 +369,46 @@ span input {
     }
     .bottom {
         margin-bottom: 20px;
+    }
+    /* profile page */
+    .profile-content {
+        width: 100%;
+        padding: 40px;
+    }
+    #bio-text {
+        font-size: 13px;
+    }
+    /*login-page*/
+    .login-body {
+        justify-content: center;
+    }
+    .login-box {
+        background-color: rgb(255, 255, 255, 0.8);
+        padding: 40px 50px 40px 50px;
+    }
+    .login-box img {
+        height: 50px;
+        width: 100px;
+        margin-bottom: 40px;
+    }
+    .login-box h1 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .form-wrapper input {
+        width: 200px;
+        height: 40px;
+    }
+    .form-wrapper a {
+        margin-bottom: 50px;
+    }
+    .form-wrapper a,
+    .privacy {
+        font-size: 11px;
+    }
+    .login-box button {
+        width: 100px;
+        height: 35px;
+        margin-bottom: 100px;
     }
 }
