@@ -17,8 +17,19 @@
     <header>
         <a class="logo"><img src="pics/logo.svg"></a>
         <div class="menu">
-            <a class="profile-name" href="/profile">John Doe</a>
-            <a class="profile-picture" href="#"><img src="pics/profile_pic.svg"></a>
+            <a class="profile-name" href="profile.html">John Doe</a>
+            <span id="dropdown-trigger" class="profile-picture">
+                <a href="#"><img src="pics/profile_pic.svg"></a>
+                <section id="menu">
+                <div class="drop-arrow"></div>
+                <ul class="dropdown">
+                    <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
+                    <li><a><i class="fa fa-comments"></i>Feedback</a></li>
+                    <li><a><i class="fas fa-info-circle "></i>About</a></li>
+                    <li><a><i class="fas fa-sign-out-alt"></i>Sign out</a></li>
+                </ul>
+            </section>
+            </span>
             <a class="notification" href="#"><img src="pics/notification.svg"></a>
         </div>
     </header>
@@ -46,12 +57,12 @@
                 <h1 class="col-md-12 title">Profile</h1>
             </div>
             <div class="row profile-content">
-                <section class="row row-0">
-                    <a class="col-md-2 profile-picture-1" href="#"><img src="pics/profile_pic.svg">
+                <section class="row-0">
+                    <a class="profile-picture-1" href="#"><img src="pics/profile_pic.svg">
                         <i class="fas fa-pencil-alt"></i></a>
-                    <span class="col-md-2 profile-info"><h1 class="title">John Doe</h1>
+                    <span class="profile-info"><h1 class="title">John Doe</h1>
                 <p>johndoe@example.com</p></span>
-                    <a class="col-md-2 col-md-offset-6 change-password">Change password</a>
+                    <a class="change-password">Change password</a>
                 </section>
                 <section class="row" id="info-title">
                     <p>BASIC INFORMATION</p>
@@ -89,7 +100,7 @@
                 <section class="row row-4">
                     <span class="col-md-5">
                         <small>Bio</small>
-                        <textarea name="bio" id="bio-text" cols="30" rows="3">
+                        <textarea name="bio" id="bio-text" cols="10" rows="6">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since...
                         </textarea>
                         <small id="length">180/500</small>
@@ -99,15 +110,24 @@
                         <input value="linkedin.com/JohnDoe"/>
                     </span>
                 </section>
-                <section class="row row-5 d-flex align-items-flex-end">
+                <section class="row row-5">
                     <input class="col-md-1" type="checkbox">
                     <p class="col-md-6">Hide your public contact info (email and number) from other tenants.</p>
                     <a class="fas fa-info-circle col-md-1"></a>
-                    </span>
+
+
+                </section>
+                <section class="row row-6 d-flex align-items-flex-end">
+
+                    <small>Only active tenants in the building that have Aspen apps can see your public contact info (email and number) if you wish to show this info. We encourage you to leave this enabled to encourage colaboration and contact between all tenants.</small>
+
+                    <button>Save changes</button>
                 </section>
             </div>
 
     </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

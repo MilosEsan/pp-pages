@@ -18,7 +18,18 @@
         <a class="logo"><img src="pics/logo.svg"></a>
         <div class="menu">
             <a class="profile-name" href="profile.html">John Doe</a>
-            <a class="profile-picture" href="#"><img src="pics/profile_pic.svg"></a>
+            <span id="dropdown-trigger" class="profile-picture">
+                <a href="#"><img src="pics/profile_pic.svg"></a>
+                <section id="menu">
+                <div class="drop-arrow"></div>
+                <ul class="dropdown">
+                    <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
+                    <li><a><i class="fa fa-comments"></i>Feedback</a></li>
+                    <li><a><i class="fas fa-info-circle "></i>About</a></li>
+                    <li><a><i class="fas fa-sign-out-alt"></i>Sign out</a></li>
+                </ul>
+            </section>
+            </span>
             <a class="notification" href="#"><img src="pics/notification.svg"></a>
         </div>
     </header>
@@ -52,6 +63,7 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
