@@ -128,8 +128,14 @@ aside {
 }
 
 aside .list li {
+    font-size: 22px;
     cursor: pointer;
     margin-bottom: 20px;
+}
+
+.arrow-right {
+    margin-left: 50px;
+    display: none;
 }
 
 aside .list a {
@@ -199,6 +205,11 @@ aside .list-1 small {
 
 /*PROFILE-PAGE CODE IS BELOW THIS LINE*/
 
+.profile-content {
+    margin: 0;
+    width: 100%;
+}
+
 .profile-picture-1 img {
     border-radius: 50%;
     height: 131px;
@@ -225,7 +236,7 @@ aside .list-1 small {
     margin-top: 85px;
 }
 
-.profile-content .row-0 {
+.row-0 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -256,24 +267,20 @@ aside .list-1 small {
     margin-bottom: 30px;
 }
 
-.row-5 {
-    padding-left: 0;
-    width: 100%;
-}
-
-.row-5 span {
+span input {
     border-width: 0;
+    margin-bottom: 10px;
 }
 
 span small {
     color: #C5C5C5;
 }
 
-#length {
+.length {
     align-self: flex-end;
 }
 
-#bio-text {
+.bio-text {
     overflow: hidden;
     border-width: 0;
     font-size: 13px;
@@ -281,15 +288,44 @@ span small {
     resize: none;
 }
 
-span input {
-    border-width: 0;
-    margin-bottom: 10px;
+.row-5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .row-5 input {
-    margin-left: 0;
-    border-radius: 0;
-    border-color: #C5C5C5;
+    align-self: flex-start;
+}
+
+.row-5 a {
+    cursor: pointer;
+    color: #b07e09;
+    flex-grow: 1;
+}
+
+.hide-text {
+    margin-left: 17px;
+    flex-grow: 0;
+}
+
+.row-6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row-6 small {
+    margin-left: 200px;
+    width: 350px;
+    padding: 20px 14px 20px 14px;
+    color: #000000;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 25px #0000000d;
 }
 
 section button {
@@ -298,6 +334,11 @@ section button {
     height: 60px;
     background: #B07E09;
     border-width: 0;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 100px;
+    justify-content: left;
+    align-self: flex-end;
 }
 
 
@@ -396,6 +437,9 @@ section button {
         font-size: 11px;
         margin-bottom: 5px;
     }
+    .arrow-right {
+        margin-left: 2px;
+    }
     .menu {
         margin-left: 20px;
     }
@@ -405,15 +449,16 @@ section button {
         margin-left: 20px;
     }
     .title {
-        margin-top: 30px;
+        margin-top: 100px;
     }
     aside {
         overflow: auto;
-        padding: 20px 5px 20px 20px;
+        padding: 40px 10px 20px 20px;
         position: absolute;
         flex-flow: row;
         justify-content: space-between;
-        height: 100px;
+        align-items: center;
+        height: 170px;
         width: 100%;
     }
     aside.list {
@@ -429,7 +474,7 @@ section button {
     aside .list li {
         font-size: 10px;
         margin-right: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         float: left;
     }
     .list-1 li {
@@ -468,8 +513,20 @@ section button {
     .change-password {
         margin-top: 50px;
     }
-    #bio-text {
+    .bio-text {
         font-size: 13px;
+    }
+    .row-6 {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .row-6 small {
+        margin-left: 0;
+        max-width: 180px;
+    }
+    section button {
+        margin-top: 100px;
+        margin-left: 0;
     }
     /*login-page*/
     .login-body {
