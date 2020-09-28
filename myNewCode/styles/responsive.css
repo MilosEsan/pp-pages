@@ -1,0 +1,57 @@
+/* only small desktops */
+
+
+/* tablets */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .top-header .navbar .navbar-collapse ul li a {
+        font-size: 17px;
+    }
+    .top-header .navbar .navbar-collapse ul li a {
+        padding: 7px 15px;
+    }
+}
+
+
+/* only small tablets */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .top-header .navbar .navbar-collapse ul li a {
+        padding: 5px 15px;
+    }
+    .logo_main {
+        padding: 15px 0 15px;
+    }
+    .top-header {
+        position: relative;
+    }
+    .top-header {
+        background-image: none;
+        background-color: #808080;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    header #sidebarCollapse img {
+        margin-top: 20px;
+        right: 0;
+    }
+}
+
+
+/* mobile or only mobile */
+
+@media (max-width: 767px) {
+    button#sidebarCollapse {
+        background: transparent;
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+    .logo_main img {
+        width: 135px;
+    }
+    #sidebar {
+        width: 240px;
+    }
+}
