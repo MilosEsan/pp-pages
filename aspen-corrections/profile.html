@@ -15,41 +15,47 @@
 
 <body>
     <header>
-        <a class="logo"><img src="pics/logo.svg"></a>
+        <div class="logo">
+            <a href="#"><img src="pics/logo.svg"></a>
+        </div>
         <div class="menu">
             <a class="profile-name" href="profile.html">John Doe</a>
-            <span id="dropdown-trigger" class="profile-picture">
+            <div id="dropdown-trigger" class="profile-picture">
                 <a href="#"><img src="pics/profile_pic.svg"></a>
                 <section id="menu">
-                <div class="drop-arrow"></div>
-                <ul class="dropdown">
-                    <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
-                    <li><a><i class="fa fa-comments"></i>Feedback</a></li>
-                    <li><a><i class="fas fa-info-circle "></i>About</a></li>
-                    <li><a><i class="fas fa-sign-out-alt"></i>Sign out</a></li>
-                </ul>
-            </section>
-            </span>
+                    <div class="drop-arrow"></div>
+                    <ul class="dropdown">
+                        <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
+                        <li><a><i class="fa fa-comments"></i>Feedback</a></li>
+                        <li><a><i class="fas fa-info-circle "></i>About</a></li>
+                        <li><a><i class="fas fa-sign-out-alt"></i>Sign out</a></li>
+                    </ul>
+                </section>
+            </div>
             <a class="notification" href="#"><img src="pics/notification.svg"></a>
         </div>
     </header>
     <main>
         <aside>
-            <ul class="list">
-                <li><a><i class="fa fa-cog"></i>Dashboard</a></li>
-                <li><a><i class="fas fa-tools"></i>Service requests</a></li>
-                <li><a><i class="fas fa-archive"></i>Bookings</a></li>
-                <li><a><i class="fas fa-cube"></i>Amenities</a></li>
-                <li><a><i class="fa fa-users"></i>Users</a></li>
-                <li><a><i class="fa fa-building"></i>Properties</a></li>
-                <li><a><i class="fas fa-circle"></i>Companies</a></li>
-                <li><a><i class="fas fa-bell"></i>Notification</a></li>
-                <li><a><i class="fas fa-folder"></i>Data Lists</a></li>
-            </ul>
-            <ul class="list-1">
-                <li>Aspen Properties</li>
-                <li><small>Version 2.4.5</small></li>
-            </ul>
+            <div class="list">
+                <ul>
+                    <li><a><i class="fa fa-cog"></i>Dashboard</a></li>
+                    <li><a><i class="fas fa-tools"></i>Service requests</a></li>
+                    <li><a><i class="fas fa-archive"></i>Bookings</a></li>
+                    <li><a><i class="fas fa-cube"></i>Amenities</a></li>
+                    <li><a><i class="fa fa-users"></i>Users</a></li>
+                    <li><a><i class="fa fa-building"></i>Properties</a></li>
+                    <li><a><i class="fas fa-circle"></i>Companies</a></li>
+                    <li><a><i class="fas fa-bell"></i>Notification</a></li>
+                    <li><a><i class="fas fa-folder"></i>Data Lists</a></li>
+                </ul>
+            </div>
+            <div class="list-1">
+                <ul>
+                    <li>Aspen Properties</li>
+                    <li><small>Version 2.4.5</small></li>
+                </ul>
+            </div>
         </aside>
         <section class="container content">
 
@@ -60,8 +66,10 @@
                 <section class="row-0">
                     <a class="profile-picture-1" href="#"><img src="pics/profile_pic.svg">
                         <i class="fas fa-pencil-alt"></i></a>
-                    <span class="profile-info"><h1 class="title">John Doe</h1>
-                <p>johndoe@example.com</p></span>
+                    <div class="profile-info">
+                        <h1 class="title">John Doe</h1>
+                        <p>johndoe@example.com</p>
+                    </div>
                     <a class="change-password">Change password</a>
                 </section>
                 <section class="row" id="info-title">

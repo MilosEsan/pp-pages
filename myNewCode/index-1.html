@@ -20,18 +20,73 @@
 </head>
 
 <body>
-    <header class="top-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="logo_main">
-                        <a href="index-1.html"><img src="images/main_logo.png"></a>
+    <header class="top-header align-items-center">
+        <div class="main-header  header-sticky">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <!-- Logo -->
+                    <div class="col-xl-2 col-lg-2 col-md-1">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-10 col-md-10">
+                        <div class="menu-main d-flex align-items-center justify-content-end">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="portfolio.html">Portfolio</a></li>
+                                        <li><a href="#">Page</a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="blog_details.html">Blog Details</a></li>
+                                                <li><a href="elements.html">Element</a></li>
+                                                <li><a href="portfolio_details.html">Portfolio Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-right-btn f-right d-none d-xl-block ml-20">
+                                <a href="#" class="btn header-btn">Get Free Consultent</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none">
+                            <div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+                                <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                                    <li><a href="index.html" role="menuitem" tabindex="-1">Home</a></li>
+                                    <li><a href="about.html" role="menuitem" tabindex="-1">About</a></li>
+                                    <li><a href="services.html" role="menuitem" tabindex="-1">Services</a></li>
+                                    <li><a href="portfolio.html" role="menuitem" tabindex="-1">Portfolio</a></li>
+                                    <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"><a href="#" tabindex="-1">Page</a>
+                                        <span class="slicknav_arrow">+</span></a>
+                                        <ul class="submenu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                                            <li><a href="blog.html" role="menuitem" tabindex="-1">Blog</a></li>
+                                            <li><a href="blog_details.html" role="menuitem" tabindex="-1">Blog Details</a></li>
+                                            <li><a href="elements.html" role="menuitem" tabindex="-1">Element</a></li>
+                                            <li><a href="portfolio_details.html" role="menuitem" tabindex="-1">Portfolio Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html" role="menuitem" tabindex="-1">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn"><img src="images/menu_icon.png"></button>
-                </div>
             </div>
+        </div>
+        <div class="col-sm-6">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn"><img src="images/menu_icon.png"></button>
+        </div>
+        </div>
         </div>
     </header>
     <nav id="sidebar">
@@ -44,7 +99,7 @@
             </ul>
         </div>
     </nav>
-    <!-- Start Footer -->
+    <!-- Start Footer
     <footer class="footer-box">
         <div class="container">
             <div class="row">
@@ -94,7 +149,7 @@
             </div>
         </div>
     </footer>
-    <!-- End Footer -->
+    End Footer 
     <div class="footer_bottom">
         <div class="container">
             <div class="row">
@@ -103,7 +158,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 

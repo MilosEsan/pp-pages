@@ -5,7 +5,7 @@
     <!-- Bootstrap core CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+    <link href="bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
 
@@ -15,53 +15,62 @@
 
 <body>
     <header>
-        <a class="logo"><img src="pics/logo.svg"></a>
+        <div class="logo">
+            <a href="#"><img src="pics/logo.svg"></a>
+        </div>
         <div class="menu">
             <a class="profile-name" href="profile.html">John Doe</a>
-            <span id="dropdown-trigger" class="profile-picture">
+            <div id="dropdown-trigger" class="profile-picture">
                 <a href="#"><img src="pics/profile_pic.svg"></a>
                 <section id="menu">
-                <div class="drop-arrow"></div>
-                <ul class="dropdown">
-                    <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
-                    <li><a><i class="fa fa-comments"></i>Feedback</a></li>
-                    <li><a><i class="fas fa-info-circle "></i>About</a></li>
-                    <li><a><i class="fas fa-sign-out-alt"></i>Sign out</a></li>
-                </ul>
-            </section>
-            </span>
+                    <div class="drop-arrow"></div>
+                    <ul class="dropdown">
+                        <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
+                        <li><a><i class="fa fa-comments"></i>Feedback</a></li>
+                        <li><a><i class="fas fa-info-circle "></i>About</a></li>
+                        <li><a><i class="fas fa-sign-out-alt"></i>Sign out</a></li>
+                    </ul>
+                </section>
+            </div>
             <a class="notification" href="#"><img src="pics/notification.svg"></a>
         </div>
     </header>
     <main>
         <aside>
-            <ul class="list">
-                <li><a><i class="fa fa-cog"></i>Dashboard</a></li>
-                <li><a><i class="fas fa-tools"></i>Service requests</a></li>
-                <li><a><i class="fas fa-archive"></i>Bookings</a></li>
-                <li><a><i class="fas fa-cube"></i>Amenities</a></li>
-                <li><a><i class="fa fa-users"></i>Users</a></li>
-                <li><a><i class="fa fa-building"></i>Properties</a></li>
-                <li><a><i class="fas fa-circle"></i>Companies</a></li>
-                <li><a><i class="fas fa-bell"></i>Notification</a></li>
-                <li><a><i class="fas fa-folder"></i>Data Lists</a></li>
-            </ul>
-            <ul class="list-1">
-                <li>Aspen Properties</li>
-                <li><small>Version 2.4.5</small></li>
-            </ul>
+            <div class="list">
+                <ul>
+                    <li><a><i class="fa fa-cog"></i>Dashboard</a></li>
+                    <li><a><i class="fas fa-tools"></i>Service requests</a></li>
+                    <li><a><i class="fas fa-archive"></i>Bookings</a></li>
+                    <li><a><i class="fas fa-cube"></i>Amenities</a></li>
+                    <li><a><i class="fa fa-users"></i>Users</a></li>
+                    <li><a><i class="fa fa-building"></i>Properties</a></li>
+                    <li><a><i class="fas fa-circle"></i>Companies</a></li>
+                    <li><a><i class="fas fa-bell"></i>Notification</a></li>
+                    <li><a><i class="fas fa-folder"></i>Data Lists</a></li>
+                </ul>
+            </div>
+            <div class="list-1">
+                <ul>
+                    <li>Aspen Properties</li>
+                    <li><small>Version 2.4.5</small></li>
+                </ul>
+            </div>
         </aside>
-        <section class="container content">
+        <section class="container-fluid content">
 
-            <div class="row">
+            <div class="row p-0 m-0 w-100">
                 <div class="col-md-12">
                     <h1 class="title">Dashboard</h1>
                 </div>
-                <div class="row">
-                    <div class="text-center col-md-5 top1"></div>
-                    <div class="text-center col-md-5 top2"></div>
+                <div class="row justify-content-center w-100">
+                    <div class="col-lg-5 col-sm-12 top1"></div>
+                    <div class="col-lg-5 col-sm-12 top2"></div>
                 </div>
-                <div class="col-md-12 bottom"></div>
+                <div class="row w-100">
+                    <div class="col-md-12 col-lg-12 bottom"></div>
+                </div>
+
             </div>
         </section>
     </main>
