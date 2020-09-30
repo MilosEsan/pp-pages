@@ -22,9 +22,9 @@
             <a class="profile-name" href="profile.html">John Doe</a>
             <div id="dropdown-trigger" class="profile-picture">
                 <a href="#"><img src="pics/profile_pic.svg"></a>
-                <section id="menu">
-                    <div class="drop-arrow"></div>
-                    <ul class="dropdown">
+                <section id="menu" class="active">
+                    <div id="drop-arrow"></div>
+                    <ul id="dropdown">
                         <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
                         <li><a><i class="fa fa-comments"></i>Feedback</a></li>
                         <li><a><i class="fas fa-info-circle "></i>About</a></li>
@@ -57,21 +57,22 @@
                 </ul>
             </div>
         </aside>
-        <section class="container-fluid content">
+        <section class="container p-0 content">
 
-            <div class="row p-0 m-0 w-100">
+            <div class="row  w-100">
                 <div class="col-md-12">
                     <h1 class="title">Dashboard</h1>
                 </div>
-                <div class="row justify-content-center w-100">
-                    <div class="col-lg-5 col-sm-12 top1"></div>
-                    <div class="col-lg-5 col-sm-12 top2"></div>
-                </div>
-                <div class="row w-100">
-                    <div class="col-md-12 col-lg-12 bottom"></div>
-                </div>
-
             </div>
+            <div class="row justify-content-between w-100">
+                <div class="col-md-5 col-sm-12 top1"></div>
+                <div class="col-md-5 col-sm-12 top2"></div>
+            </div>
+            <div class="row justify-content-center w-100">
+                <div class="col-sm-12 col-lg-11 bottom"></div>
+            </div>
+
+
         </section>
     </main>
     <script src="dropdown.js"></script>

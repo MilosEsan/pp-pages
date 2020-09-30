@@ -1,5 +1,7 @@
-let menu = document.getElementById('menu');
+let menu = document.getElementById('dropdown-trigger');
+let container = document.getElementById('menu')
 
-document.getElementById('dropdown-trigger').addEventListener('click', function() {
-    menu.style.display = 'block';
+
+menu.addEventListener('click', function() {
+    container.classList.toggle('active');
 })
