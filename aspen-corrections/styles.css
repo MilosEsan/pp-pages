@@ -122,6 +122,7 @@ header {
 main {
     display: flex;
     justify-content: start;
+    padding: 0 !important;
 }
 
 aside {
@@ -163,8 +164,8 @@ aside .list-1 small {
 }
 
 .content {
-    width: 75%;
-    margin: 60px 0px 60px 60px;
+    width: auto;
+    margin: 60px 0px 60px 0px;
 }
 
 .title {
@@ -175,11 +176,11 @@ aside .list-1 small {
 }
 
 .top1 {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
-.top-2 {
-    margin-left: 30px;
+.top2 {
+    margin-left: 20px;
 }
 
 .top1,
@@ -192,7 +193,6 @@ aside .list-1 small {
 
 .bottom {
     height: 256px;
-    width: fit-content;
 }
 
 .top,
@@ -422,7 +422,7 @@ section button {
     margin-bottom: 108px;
 }
 
-.login-box .privacy {
+.login-box .privacy a {
     color: #b07e09;
     text-decoration: underline;
 }
@@ -501,8 +501,6 @@ section button {
     }
     .content {
         margin: 100px 30px 30px 30px;
-        height: 800px;
-        width: 100%;
     }
     .flex-wrapper {
         flex-direction: column;
