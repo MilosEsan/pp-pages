@@ -20,24 +20,81 @@
         </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                    <li class="nav-item active animated fadeInRight">
+                        <a class="nav-link" href="home.html">Home</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Dashboard</a>
+                    <li class="nav-item active animated fadeInRight">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Form-layout</a>
+                    <li class="nav-item active animated fadeInRight">
+                        <a class="nav-link" href="form.html">Form</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Modals</a>
+                    <li class="nav-item active animated fadeInRight">
+                        <a class="nav-link" href="modals.html">Modals</a>
                     </li>
+
                     <li class="nav-item active search">
-                        <span class="fa fa-search"></span>
-                        <input placeholder="Search term" />
+                        <div class="search-wrapper">
+                            <div class="input-holder">
+
+                                <button class="search-icon" onclick="toggler1(input)">
+                                    <span id="toggler1" class="animated fadeIn fas fa-search"></span> 
+                                    <span id="toggler1-close" class="animated fadeIn fas fa-times"> </span>
+                                </button>
+                                <div class="" id="input-collapse">
+                                    <span class="fa fa-search"></span>
+                                    <input placeholder="Search term" />
+                                </div>
+
+
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
+
+            <div class="profile-info">
+                <a type="button" id="sidebarCollapse">
+                    <img width="32" class="rounded-circle" src="assets/images/avatars/2.jpg" alt=""> PROFILE INFO
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav id="sidebar">
+        <div class="wrapper">
+            <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                <img width="52" class="rounded-circle" src="assets/images/avatars/2.jpg">
+
+                <i class="fa fa-angle-down ml-2 opacity-8"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li>
+                    <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                </li>
+                <hr class="mt-4">
+                <li><a href="#">About me</a></li>
+
+                <li><a href="#">My website</a></li>
+            </ul>
+        </div>
+        <div class="ml-3 header-user-info">
+            <div class="widget-heading">
+                John DOE
+            </div>
+            <div class="widget-subheading">
+                VP People Manager
+            </div>
+        </div>
+
+        <div class="menu_section">
+            <ul>
+
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Actions</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">My Car</a></li>
+            </ul>
         </div>
     </nav>
     <div class="app-main">
@@ -95,13 +152,135 @@
             </div>
 
         </div>
+
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <h5 class="card-title">Grid</h5>
+                <div>
+                    <form>
+                        <div class="row form-group">
+                            <label for="email" class="col-sm-2">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" name="email" id="Email" placeholder="e-mail" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="password" class="col-sm-2">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" name="email" id="password" placeholder="password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="select" class="col-sm-2">Select</label>
+                            <div class="col-sm-10">
+                                <select id="select" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="selectMultiple" class="col-sm-2">Select multiple</label>
+                            <div class="col-sm-10">
+                                <select multiple="" name="selectMulti" id="selectMultiple" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="text" class="col-sm-2">Text area</label>
+                            <div class="col-sm-10">
+                                <textarea rows="5" name="text" id="text" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="file" class="col-sm-2">File</label>
+                            <div class="col-sm-10">
+                                <div class="col-sm-10"><input name="file" id="file" type="file" class="form-control-file">
+                                    <small class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                                </div>
+                            </div>
+                        </div>
+                        <fieldset class="row form-group">
+                            <legend class="col-form-label col-sm-2 text-muted">Radio Buttons</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input name="radio2" type="radio" class="form-check-input"> 
+                                        Option one
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input name="radio2" type="radio" class="form-check-input"> 
+                                        Option two - deselect option one</label></div>
+                                <div class="form-check disabled">
+                                    <label class="form-check-label text-muted">
+                                        <input name="radio3" disabled="true" type="radio" class="form-check-input"> 
+                                        Option three is disabled</label></div>
+                            </div>
+                        </fieldset>
+                        <div class="row form-group">
+                            <label for="checkbox2" class="col-sm-2 text-muted">Checkbox</label>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input id="checkbox2" type="checkbox" class="form-check-input"> 
+                                        Check me out
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row form-check">
+                            <div class="col-sm-10 offset-sm-2">
+                                <button class="btn btn-secondary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
         </form>
+    </div>
+    <div class="app-wrapper-footer">
+        <div class="app-footer">
+            <div class="app-footer__inner">
+                <div class="app-footer-left">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Footer Link 1
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Footer Link 2
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="app-footer-right">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Footer Link 3
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="badge badge-success mr-1 ml-0">
+                                    <small>NEW</small>
+                                </div>
+                                Footer Link 4
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- JS, Popper.js, animaptins.mdb.js and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script type="text/javascript" src="animations/js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/toggler.js"></script>
 </body>
 
 </html>

@@ -209,3 +209,10 @@ button#sidebarCollapse {
     border: 1px solid rgba(26, 54, 126, 0.125);
     border-radius: 0.25rem;
 }
+
+.card-title {
+    text-transform: uppercase;
+    color: rgba(13, 27, 62, 0.7);
+    font-weight: bold;
+    font-size: 0.88rem;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link href="animations/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav id="custom-color" class="navbar navbar-expand-md navbar-light sticky-top">
+        <div class="container-fluid">
+            <div class="logo1" href="#">
+                <a class="nav-link" href="#"><img src="logo1.jpg" /></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active animated fadeInRight">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item active animated fadeInRight">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item active animated fadeInRight">
+                        <a class="nav-link" href="form.html">Form</a>
+                    </li>
+                    <li class="nav-item active animated fadeInRight">
+                        <a class="nav-link" href="modals.html">Modals</a>
+                    </li>
+
+                    <li class="nav-item active search">
+                        <div class="search-wrapper">
+                            <div class="input-holder">
+
+                                <button class="search-icon" onclick="toggler1(input)">
+                                    <span id="toggler1" class="animated fadeIn fas fa-search"></span> 
+                                    <span id="toggler1-close" class="animated fadeIn fas fa-times"> </span>
+                                </button>
+                                <div class="animated fadeInLeft" id="input-collapse">
+                                    <span class="fa fa-search"></span>
+                                    <input placeholder="Search term" />
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="profile-info">
+                <a type="button" id="sidebarCollapse">
+                    <img width="32" class="rounded-circle" src="assets/images/avatars/2.jpg" alt=""> PROFILE INFO
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav id="sidebar">
+        <div class="wrapper">
+            <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+
+                <img width="52" class="rounded-circle" src="assets/images/avatars/2.jpg">
+
+                <i class="fa fa-angle-down ml-2 opacity-8"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li>
+                    <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                </li>
+                <hr class="mt-4">
+                <li><a href="#">About me</a></li>
+
+                <li><a href="#">My website</a></li>
+            </ul>
+        </div>
+        <div class="ml-3 header-user-info">
+            <div class="widget-heading">
+                John DOE
+            </div>
+            <div class="widget-subheading">
+                VP People Manager
+            </div>
+        </div>
+
+        <div class="menu_section">
+            <ul>
+
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Actions</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">My Car</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="app-main">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>WELCOME!</h1>
+                <p>New styles, new designs, new scripts, new <strong><em>EVERYTHING</em></strong>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="app-wrapper-footer">
+        <div class="app-footer">
+            <div class="app-footer__inner">
+                <div class="app-footer-left">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Footer Link 1
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Footer Link 2
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="app-footer-right">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Footer Link 3
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <div class="badge badge-success mr-1 ml-0">
+                                    <small>NEW</small>
+                                </div>
+                                Footer Link 4
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS, Popper.js, animaptins.mdb.js and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="animations/js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/toggler.js"></script>
+</body>
+
+</html>
